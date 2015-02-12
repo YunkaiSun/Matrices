@@ -25,7 +25,7 @@ int order3()
     create_order_3_matrices(o3);
     printf("formatting done\n");
 
-/*
+
     printf("print all order of 3 matrices\n");
     //print all O-3 matrices
     for (i = 0; i < 18; i++)
@@ -37,7 +37,7 @@ int order3()
                 printf("[%d][%d] = %d\n", j+1, k+1, o3[i][j][k]);
         }
     }
-*/
+
 
 
     //main function ends here
