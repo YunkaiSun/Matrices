@@ -25,7 +25,85 @@ int order4()
     create_order_4_matrices(o4);
     printf("formatting done, ready for testing.\n");
 
+//testing for associativety
+    printf("Testing for associativety...\n");
+    int a = 0; int b = 1;
+    for (i = 0; i<126; i++)
+    {
+        a = 0; b = 1;
+        if(o4[i][0][a]!=o4[i][0][b])
+        {
+            if(o4[i][1][a]==o4[i][0][b] || o4[i][2][a]==o4[i][0][b] || o4[i][3][a]==o4[i][0][b])
+            {
+                if(o4[i][0][a]==o4[i][1][b] || o4[i][0][a]==o4[i][2][b] || o4[i][0][a]==o4[i][3][b])
+                {}
+                else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+            }
+            else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+        }
 
+        a = 0; b = 2;
+        if(o4[i][0][a]!=o4[i][0][b])
+        {
+            if(o4[i][1][a]==o4[i][0][b] || o4[i][2][a]==o4[i][0][b] || o4[i][3][a]==o4[i][0][b])
+            {
+                if(o4[i][0][a]==o4[i][1][b] || o4[i][0][a]==o4[i][2][b] || o4[i][0][a]==o4[i][3][b])
+                {}
+                else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+            }
+            else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+        }
+
+        a = 0; b = 3;
+        if(o4[i][0][a]!=o4[i][0][b])
+        {
+            if(o4[i][1][a]==o4[i][0][b] || o4[i][2][a]==o4[i][0][b] || o4[i][3][a]==o4[i][0][b])
+            {
+                if(o4[i][0][a]==o4[i][1][b] || o4[i][0][a]==o4[i][2][b] || o4[i][0][a]==o4[i][3][b])
+                {}
+                else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+            }
+            else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+        }
+
+        a = 1; b = 2;
+        if(o4[i][0][a]!=o4[i][0][b])
+        {
+            if(o4[i][1][a]==o4[i][0][b] || o4[i][2][a]==o4[i][0][b] || o4[i][3][a]==o4[i][0][b])
+            {
+                if(o4[i][0][a]==o4[i][1][b] || o4[i][0][a]==o4[i][2][b] || o4[i][0][a]==o4[i][3][b])
+                {}
+                else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+            }
+            else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+        }
+
+        a = 1; b = 3;
+        if(o4[i][0][a]!=o4[i][0][b])
+        {
+            if(o4[i][1][a]==o4[i][0][b] || o4[i][2][a]==o4[i][0][b] || o4[i][3][a]==o4[i][0][b])
+            {
+                if(o4[i][0][a]==o4[i][1][b] || o4[i][0][a]==o4[i][2][b] || o4[i][0][a]==o4[i][3][b])
+                {}
+                else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+            }
+            else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+        }
+
+        a = 2; b = 3;
+        if(o4[i][0][a]!=o4[i][0][b])
+        {
+            if(o4[i][1][a]==o4[i][0][b] || o4[i][2][a]==o4[i][0][b] || o4[i][3][a]==o4[i][0][b])
+            {
+                if(o4[i][0][a]==o4[i][1][b] || o4[i][0][a]==o4[i][2][b] || o4[i][0][a]==o4[i][3][b])
+                {}
+                else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+            }
+            else printf("the %dth matrix in order-4 does not follow associativety!! \n", i+1);
+        }
+    }
+
+    printf("Associativety testing done!\n");
 
 
 /*
@@ -771,7 +849,7 @@ int create_order_4_matrices(int o4[126][4][4]){
     i = 120;
     o4[i][0][0] = 0; o4[i][0][1] = 0; o4[i][0][2] = 2; o4[i][0][3] = 3;
     o4[i][1][0] = 0; o4[i][1][1] = 0; o4[i][1][2] = 2; o4[i][1][3] = 3;
-    o4[i][2][0] = 2; o4[i][2][1] = 2; o4[i][2][2] = 3; o4[i][2][3] = 1;
+    o4[i][2][0] = 2; o4[i][2][1] = 2; o4[i][2][2] = 3; o4[i][2][3] = 0;
     o4[i][3][0] = 3; o4[i][3][1] = 3; o4[i][3][2] = 0; o4[i][3][3] = 2;
 
     i = 121;
