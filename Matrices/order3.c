@@ -26,6 +26,7 @@ int order3()
     printf("formatting done, ready for testing process.\n");
 
 
+    //Testing for Associativety
     printf("Testing for associativety...\n");
     for (i = 0; i < 18; i++)
     {

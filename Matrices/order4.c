@@ -25,6 +25,9 @@ int order4()
     create_order_4_matrices(o4);
     printf("formatting done, ready for testing.\n");
 
+
+
+
 /*
     printf("print all order of 4 matrices\n");
     //print all O-4 matrices
