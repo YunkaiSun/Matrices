@@ -3,13 +3,13 @@
 
 int main()
 {
-    printf("Testing Order 3 Matrices...\n");
+    //printf("Running Order 3 Matrices...\n");
     //order3();
-    printf("Testing Done!\n");
+    //printf("Order 3 Done!\n");
 
-    printf("Testing Order 4 Matrices...\n");
+    printf("Running Order 4 Matrices...\n");
     order4();
-    printf("Testing Done!\n");
+    printf("Order 4 Done!\n");
 
     return 0;
 }

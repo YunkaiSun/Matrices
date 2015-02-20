@@ -23,9 +23,54 @@ int order3()
     //formatting O-3 matrices with values;
     printf("formatting order of 3 matrices...\n");
     create_order_3_matrices(o3);
-    printf("formatting done\n");
+    printf("formatting done, ready for testing process.\n");
 
 
+    printf("Testing for associativety...\n");
+    for (i = 0; i < 18; i++)
+    {
+        if (o3[i][0][0]!=o3[i][0][1])
+        {
+            if(o3[i][0][0]==o3[i][1][1] || o3[i][0][0]==o3[i][2][1])
+            {
+                if(o3[i][0][1]==o3[i][1][0] || o3[i][0][1]==o3[i][2][0])
+                {}
+                else
+                   printf("the %dth matrix in order-3 does not follow associativety!! \n", i+1);
+            }
+            else
+                printf("the %dth matrix in order-3 does not follow associativety!! \n", i+1);
+        }
+
+        if (o3[i][0][0]!=o3[i][0][2])
+        {
+            if(o3[i][0][0]==o3[i][1][2] || o3[i][0][0]==o3[i][2][2])
+            {
+                if(o3[i][0][2]==o3[i][1][0] || o3[i][0][2]==o3[i][2][0])
+                {}
+                else
+                   printf("the %dth matrix in order-3 does not follow associativety!! \n", i+1);
+            }
+            else
+                printf("the %dth matrix in order-3 does not follow associativety!! \n", i+1);
+        }
+
+        if (o3[i][0][2]!=o3[i][0][1])
+        {
+            if(o3[i][0][2]==o3[i][1][1] || o3[i][0][2]==o3[i][2][1])
+            {
+                if(o3[i][0][1]==o3[i][1][2] || o3[i][0][1]==o3[i][2][2])
+                {}
+                else
+                   printf("the %dth matrix in order-3 does not follow associativety!! \n", i+1);
+            }
+            else
+                printf("the %dth matrix in order-3 does not follow associativety!! \n", i+1);
+        }
+    }
+    printf("Associativety Testing done.\n");
+
+/*
     printf("print all order of 3 matrices\n");
     //print all O-3 matrices
     for (i = 0; i < 18; i++)
@@ -37,6 +82,7 @@ int order3()
                 printf("[%d][%d] = %d\n", j+1, k+1, o3[i][j][k]);
         }
     }
+*/
 
 
 
